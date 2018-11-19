@@ -18,8 +18,8 @@ class DevConfig(BaseConfig):
 
 def get_config(argv1):
     if argv1 == 'hdfs2hive':
-        return JuvenalOrderConfig()
+        return DevConfig()
     elif argv1 == 'hdfs2hive-dev':
-        return JuvenalDeliveryConfig()
+        return DevConfig()
     else:
         return DevConfig()
